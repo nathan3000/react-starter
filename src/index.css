@@ -574,6 +574,8 @@ video {
   height: auto;
 }
 
+@import "./custom.css";
+
 .container {
   width: 100%;
 }

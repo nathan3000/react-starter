@@ -13,4 +13,4 @@ storiesOf("Welcome", module).add("to Storybook", () => (
   <Welcome showApp={linkTo("App")} />
 ));
 
-storiesOf("App", module).add("default", () => <App />);
+storiesOf("App", module).add("default", () => <App title="React Starter" />);
