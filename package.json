@@ -1,7 +1,11 @@
 {
-  "name": "boilerplate",
+  "name": "react-starter",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Nathan Fiser",
+    "email": "hello@nathanfisher.me"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
