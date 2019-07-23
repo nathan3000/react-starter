@@ -16,7 +16,7 @@
     "tailwindcss": "^1.0.5"
   },
   "scripts": {
-    "build:css": "postcss src/index.tailwind.css -o src/index.css",
+    "build:css": "postcss src/index.tailwind.css -o src/index.css --env production",
     "watch:css": "postcss src/index.tailwind.css -o src/index.css -w",
     "start": "npm run watch:css & rescripts start",
     "build": "npm run build:css && rescripts build",
@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.14",
+    "@fullhuman/postcss-purgecss": "^1.2.0",
     "@rescripts/cli": "0.0.11",
     "@rescripts/rescript-env": "0.0.10",
     "@storybook/addon-actions": "^5.1.9",
