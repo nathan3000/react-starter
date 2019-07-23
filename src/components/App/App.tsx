@@ -17,6 +17,8 @@ const App = (props: Props) => {
         <li>Emotion</li>
         <li>Tailwind CSS</li>
         <li>Storybook</li>
+        <li>PostCSS</li>
+        <li>PurgeCSS</li>
       </ul>
       <p className="mt-8">
         <a
