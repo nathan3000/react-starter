@@ -1,9 +1,6 @@
 import React from "react";
-
 import { storiesOf } from "@storybook/react";
 
-import App from "../components/App";
-
-import "../index.css";
+import App from "./App";
 
 storiesOf("App", module).add("default", () => <App title="React Starter" />);

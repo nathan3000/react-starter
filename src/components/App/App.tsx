@@ -1,4 +1,9 @@
 import React from "react";
+import Box from "../Box";
+import Text from "../Text";
+import Heading from "../Heading";
+import Link from "../Link";
+import Button from "../Button";
 
 type Props = {
   title: string;
@@ -7,30 +12,44 @@ type Props = {
 const App = (props: Props) => {
   const { title } = props;
   return (
-    <div className="bg-gray-100 min-h-screen text-center">
-      <h1 className="p-4 pt-8 font-semibold text-gray-700 text-5xl underline">
+    <Box bg="gray.100" minHeight="screen" textAlign="center">
+      <Heading
+        as="h1"
+        p={4}
+        pt={8}
+        fontWeight={6}
+        color="gray.700"
+        fontSize={8}
+        css={{
+          textDecoration: "underline",
+        }}
+      >
         {title}
-      </h1>
-      <p className="font-semibold mb-4">Create React App with</p>
+      </Heading>
+      <Text as="p" mb={4} fontWeight={4}>
+        Create React App with
+      </Text>
       <ul>
         <li>Typescript</li>
         <li>Emotion</li>
-        <li>Tailwind CSS</li>
         <li>Storybook</li>
-        <li>PostCSS</li>
-        <li>PurgeCSS</li>
       </ul>
-      <p className="mt-8">
-        <a
+
+      <Box mt={6}>
+        <Link
           href="https://nathanfisher.me"
           rel="noopener noreferrer"
           target="_blank"
-          className="text-blue-800 underline"
         >
           By Nathan Fisher
-        </a>
-      </p>
-    </div>
+        </Link>
+      </Box>
+
+      <Box mt={10} />
+      <Box mt={10}>
+        <Button>Button</Button>
+      </Box>
+    </Box>
   );
 };
 

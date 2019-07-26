@@ -1,6 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./components/App";
+// import "./index.css";
+import AppWrapper from "./components/AppWrapper";
 
-ReactDOM.render(<App title="React Starter" />, document.getElementById("root"));
+ReactDOM.render(
+  <AppWrapper>
+    <App title="React Starter" />
+  </AppWrapper>,
+  document.getElementById("root")
+);
