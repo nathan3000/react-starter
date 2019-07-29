@@ -1,6 +1,13 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { space, layout, typography, color, border } from "styled-system";
+import {
+  space,
+  layout,
+  typography,
+  color,
+  border,
+  shadow,
+} from "styled-system";
 import {
   SpaceProps,
   LayoutProps,
@@ -8,6 +15,7 @@ import {
   ColorStyleProps,
   BackgroundColorProps,
   BorderProps,
+  ShadowProps,
 } from "styled-system";
 
 export type BoxProps = SpaceProps &
@@ -15,6 +23,7 @@ export type BoxProps = SpaceProps &
   TypographyProps &
   ColorStyleProps &
   BackgroundColorProps &
+  ShadowProps &
   BorderProps & {
     as?: string;
   };
@@ -25,6 +34,7 @@ const Box = styled.div<BoxProps>`
   ${typography}
   ${color}
   ${border}
+  ${shadow}
 `;
 
 Box.displayName = "Box";
