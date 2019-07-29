@@ -1,15 +1,23 @@
 import styled from "@emotion/styled";
-import { borderRadius, BorderRadiusProps } from "styled-system";
+import { borderRadius, BorderRadiusProps, variant } from "styled-system";
 
 import Box, { BoxProps } from "../Box";
 
-export type ButtonProps = BoxProps & BorderRadiusProps;
+export type ButtonProps = BoxProps &
+  BorderRadiusProps & {
+    variant?: string;
+  };
+
+const buttonStyle = variant({
+  key: "buttons",
+});
 
 const Button = styled(Box)<ButtonProps>(
   {
     display: "inline-block",
   },
-  borderRadius
+  borderRadius,
+  buttonStyle
 );
 
 Button.defaultProps = {
@@ -17,9 +25,8 @@ Button.defaultProps = {
   m: 0,
   px: 3,
   py: 2,
-  bg: "blue.500",
   borderRadius: 4,
-  color: "white",
+  variant: "primary",
 };
 
 export default Button;
