@@ -28,4 +28,6 @@ Link.defaultProps = {
   color: "blue.600",
 };
 
+Link.displayName = "Link";
+
 export default Link;

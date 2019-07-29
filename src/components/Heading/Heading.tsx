@@ -10,4 +10,6 @@ Heading.defaultProps = {
   fontWeight: "bold",
 };
 
+Heading.displayName = "Heading";
+
 export default Heading;

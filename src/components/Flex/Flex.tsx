@@ -25,4 +25,6 @@ const Flex = styled(Box)<FlexProps>(
   justifyContent
 );
 
+Flex.displayName = "Flex";
+
 export default Flex;

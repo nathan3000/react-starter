@@ -164,9 +164,18 @@ export default {
   colors,
   space,
   buttons: {
+    default: {
+      color: colors.gray["800"],
+      border: 0,
+    },
     primary: {
       color: "#fff",
       backgroundColor: colors.blue["500"],
+      borderColor: colors.blue["600"],
+    },
+    secondary: {
+      color: colors.gray["800"],
+      borderColor: colors.gray["800"],
     },
   },
 };

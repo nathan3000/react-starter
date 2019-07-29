@@ -27,6 +27,8 @@ const Box = styled.div<BoxProps>`
   ${border}
 `;
 
+Box.displayName = "Box";
+
 Box.defaultProps = {
   fontFamily: "sansSerif",
 };

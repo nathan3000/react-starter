@@ -20,13 +20,16 @@ const Button = styled(Box)<ButtonProps>(
   buttonStyle
 );
 
+Button.displayName = "Button";
+
 Button.defaultProps = {
   as: "button",
   m: 0,
   px: 3,
   py: 2,
-  borderRadius: 4,
-  variant: "primary",
+  borderRadius: "4px",
+  borderWidth: "1px",
+  variant: "default",
 };
 
 export default Button;

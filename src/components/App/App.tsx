@@ -47,7 +47,7 @@ const App = (props: Props) => {
 
       <Box mt={10} />
       <Box mt={10}>
-        <Button>Button</Button>
+        <Button variant="primary">Button</Button>
       </Box>
     </Box>
   );

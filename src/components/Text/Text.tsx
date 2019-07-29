@@ -14,4 +14,6 @@ Text.defaultProps = {
   as: "span",
 };
 
+Text.displayName = "Text";
+
 export default Text;
