@@ -163,6 +163,7 @@ export default {
   fontWeights: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   colors,
   space,
+  radii: [0, "0.125rem", "0.25rem", "0.5rem", "9999px"],
   buttons: {
     default: {
       color: colors.gray["800"],
