@@ -1,9 +1,9 @@
 import React from "react";
-import Box from "../Box";
-import Text from "../Text";
-import Heading from "../Heading";
-import Link from "../Link";
-import Button from "../Button";
+import Box from "../../components/Box";
+import Text from "../../components/Text";
+import Heading from "../../components/Heading";
+import Link from "../../components/Link";
+import Button from "../../components/Button";
 
 type Props = {
   title: string;

@@ -3,7 +3,11 @@ import { ThemeProvider } from "emotion-theming";
 import GlobalStyles from "./GlobalStyles";
 import theme from "../theme";
 
-export default ({ children }) => (
+type Props = {
+  children: React.ReactNode;
+};
+
+export default ({ children }: Props) => (
   <ThemeProvider theme={theme}>
     <GlobalStyles />
     {children}
